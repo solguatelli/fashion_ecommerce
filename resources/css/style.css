@@ -235,7 +235,6 @@ h1,h2,h3 {
     font-weight: 300;
 }
 
-
 .newsletter_info {
     text-align: center;
 }
@@ -317,7 +316,54 @@ h1,h2,h3 {
     font-size: 1rem;
 }
 
+/* Style for Contact.html */
 
+/**** CONTACT FORM ****/
+
+#contact {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact_title {
+    margin-top: 90px;
+}
+
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+
+
+#contact input,#contact textarea {
+    display: inline-block;
+    width: 100%;
+}
+
+#contact label {
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+#contact button {
+    border: 1px solid #000;
+    margin-top: 10px;
+    cursor: pointer;
+    padding: 1rem;
+    background: none;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+#contact button:hover {
+    background-color: #000;
+    color: #fff;
+}
 
 /* BANNER COLOR PALETTE */
 
