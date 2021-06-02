@@ -1,3 +1,19 @@
+/* Style for index.html */
+
+
+/* BANNER COLOR PALETTE */
+
+/* $black-chocolate: #29231fff;
+$polished-pine: #61988eff;
+$ash-gray: #a0b2a6ff;
+$pale-silver: #cbbfbbff;
+$desert-sand: #eabda8ff; */
+
+/* BREAKPOINTS */
+
+/* Tablet: max-width: 1023px */
+/* Mobile: max-width: 639px */
+
 /* GLOBAL SETTINGS */
 
 * {
@@ -8,6 +24,7 @@
 body {
     font-size: 16px;
     font-family: "Muli", sans-serif;
+    color: #000;
 }
 
 a {
@@ -21,7 +38,10 @@ li {
 
 h1,h2,h3 {
     font-weight: 300;
-    font-family: "adobe-garamond-pro", serif;
+}
+
+*:focus {
+    outline: none;
 }
 
 /******** NAVIGATION BAR **********/
@@ -37,8 +57,6 @@ h1,h2,h3 {
     z-index: 1;
     width: 100%;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
     padding: 1.5rem 0;
@@ -67,7 +85,6 @@ h1,h2,h3 {
 }
 
 .nav_item a{
-    color: #000;
     transition: color 0.1s;
 }
 
@@ -142,7 +159,7 @@ h1,h2,h3 {
 /******* PREVIEW SECTION *******/
 
 #preview {
-    margin-top: 50px;
+    margin: 50px 0 100px;
     height: 100vh;
 }
 
@@ -171,7 +188,6 @@ h1,h2,h3 {
     width: 27%;
     margin: 1rem 2rem;
     transition: transform 150ms ease-in;
-    background-color: aliceblue;
 }
 
 .image_img {
@@ -185,8 +201,7 @@ h1,h2,h3 {
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(255,255,255,0.6);
-    color: black;
+    background-color: #ffffff9f;
     font-weight: 300;
     display: flex;
     flex-direction: column;
@@ -215,11 +230,58 @@ h1,h2,h3 {
     font-size: 2.2rem;
 }
 
+/* PHOTO GALLERY SECTION */
+
+#photo_gallery {
+    height: 150vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cbbfbbff;
+}
+
+.column_1,.column_2 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.column_2 {
+    flex-direction: column;
+    align-items: center;
+}
+
+.col_image_container {
+    position: relative;
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.column_2 .col_image_container {
+    margin-top: 50px;
+    width: 50%;
+}
+
+.column_2 .image_overlay {
+    color: #fff;
+    opacity: 1;
+    background: none;
+}
+
+.column_2 .image_title {
+    font-size: 3rem;
+}
+
+.column_2 .image_overlay > * {
+    transform: none
+}
+
 /* NEWSLETTER SECTION */
 
 #newsletter {
     height: 100vh;
-    margin-top: 50px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -228,7 +290,6 @@ h1,h2,h3 {
 }
 
 #newsletter h2 {
-    color: #000;
     padding: 0.5rem 0;
     font-size: 2.5rem;
     font-family: "Muli",sans-serif;
@@ -247,25 +308,27 @@ h1,h2,h3 {
     flex-direction: column;
 }
 
-.form_container input {
-    height: 30px;
+.form_container input, .form_container button{
     border: 1px solid #000;
     padding: 1rem;
+}
+
+.form_container input {
     width: 40%;
 }
 
 .form_container button {
-    display: block;
-    padding: 1rem;
-    border: 1px solid #000;
     background: none;
-    display: inline-block;
     cursor: pointer;
+    transition: all 0.1s;
 }
 
-*:focus {
-    outline: none;
+.form_container button:hover {
+    background: #000;
+    color: #fff;
 }
+
+
 
 /* FOOTER SECTION */
 
@@ -284,6 +347,7 @@ h1,h2,h3 {
 
 .brand_name h3 {
     font-size: 2rem;
+    font-family: "adobe-garamond-pro", serif;
 }
 
 .brand_name p {
@@ -316,7 +380,9 @@ h1,h2,h3 {
     font-size: 1rem;
 }
 
-/* Style for Contact.html */
+
+
+/* Style for contacto.html */
 
 /**** CONTACT FORM ****/
 
@@ -339,10 +405,7 @@ h1,h2,h3 {
     width: 60%;
 }
 
-
-
 #contact input,#contact textarea {
-    display: inline-block;
     width: 100%;
 }
 
@@ -364,14 +427,6 @@ h1,h2,h3 {
     background-color: #000;
     color: #fff;
 }
-
-/* BANNER COLOR PALETTE */
-
-/* $black-chocolate: #29231fff;
-$polished-pine: #61988eff;
-$ash-gray: #a0b2a6ff;
-$pale-silver: #cbbfbbff;
-$desert-sand: #eabda8ff; */
 
 
 
